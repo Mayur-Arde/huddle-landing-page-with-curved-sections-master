@@ -136,3 +136,97 @@ nav {
   text-align: left;
 }
 /* header with nav and hero done */
+
+/* main with section of features */
+.main {
+  margin: 6rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.all-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.features-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 22px;
+}
+
+.card-1 , .card-3{
+background-color: var(--veryPaleBlue);
+position: relative;
+}
+
+.card-1::before{
+  content: url(../images/bg-section-top-mobile-1.svg);
+  position: absolute;
+  top: -110px;
+}
+
+.card-1::after{
+  content: url(../images/bg-section-bottom-mobile-1.svg);
+  position: absolute;
+  bottom: -55px;
+}
+
+.card-3::before{
+  content: url(../images/bg-section-top-mobile-2.svg);
+  position: absolute;
+  top: -100px;
+}
+
+.card-3::after{
+  content: url(../images/bg-section-bottom-mobile-2.svg);
+  position: absolute;
+  bottom: -100px;
+}
+
+.features-card .feature-img {
+  width: 80%;
+  margin: 25px 0;
+}
+
+.features-bottom {
+  text-align: center;
+}
+
+.features-bottom p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 12px 15px 0;
+  color: var(--grayishBlue);
+}
+
+/* call to action section */
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 425px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.299);
+  padding: 1rem;
+  position: relative;
+  background-color: white;
+  z-index: 2;
+}
+
+.call-to-action h3 {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* main end  */
