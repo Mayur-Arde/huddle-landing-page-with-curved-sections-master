@@ -5,7 +5,7 @@
   --pink: hsl(322, 100%, 66%);
   --lightPink: hsl(321, 100%, 78%);
   --lightRed: hsl(0, 100%, 63%);
-
+  --white : #ffff;
   /* ### Neutral */
   --veryDarkCyan: hsl(192, 100%, 9%);
   --veryPaleBlue: hsl(207, 100%, 98%);
@@ -98,10 +98,6 @@ nav {
   margin: 1rem 0;
   color: white;
   box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.245);
-}
-
-.btn-2:hover {
-  opacity: 70%;
 }
 
 .hero .hero-img {
@@ -214,13 +210,8 @@ position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 425px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.299);
+  margin: 15rem 0  8rem ;
   padding: 1rem;
-  position: relative;
-  background-color: white;
-  z-index: 2;
 }
 
 .call-to-action h3 {
@@ -230,3 +221,100 @@ position: relative;
 }
 
 /* main end  */
+
+/* footer section  */
+.footer {
+  background-color: var(--veryDarkCyan);
+  color: var(--white);
+  padding: 2rem 1.5rem;
+  font-size: 15px; 
+}
+
+.footer-right{
+  padding: 15px;
+}
+
+.form2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin: 40px 10px 20px; */
+}
+
+.email{
+  background-color: var(--white);
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.connect-button{
+  margin: 20px 0;
+  text-align: right;
+}
+
+.btn-3{
+  padding: 7px 25px;
+  font-size: 12px;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--pink);
+  outline: none;
+}
+
+
+.bottom-logo{
+  width: 60%;
+  filter: invert(100);
+  margin: 10px 0;
+}
+
+.bottom-grid {
+  display: grid;
+  grid-template-rows: 100px 50px;
+  grid-gap: 1rem;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 30px auto;
+  grid-template-rows: 50px 50px;
+  grid-gap: 0.4rem;
+}
+
+
+.contact-icon {
+  margin-top: 15px;
+}
+
+.soical-links {
+  text-align: left;
+}
+
+.soical-links i {
+  border-radius: 50%;
+  color: #ebfbff;
+  border: 1px solid #ebfbff;
+  padding: 0.55em 0.7em;
+  margin: 0 5px;
+}
+
+.fa-facebook-f:before {
+  content: '\f39e';
+  /* color: #ebfbff; */
+}
+
+.fa-twitter:before {
+  content: '\f099';
+  /* color: #ebfbff; */
+}
+
+.fa-instagram:before {
+  content: '\f16d';
+  /* color: #ebfbff; */
+}
+
+.soical-links i:hover {
+  color: var(--lightPink);
+  border: 1px solid var(--lightPink);
+}
